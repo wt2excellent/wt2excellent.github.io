@@ -147,18 +147,18 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -186,6 +186,84 @@
     </div>
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://wt2excellent.github.io/2024/12/22/JVM-Interview-Summary/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Hexo">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2024/12/22/JVM-Interview-Summary/" class="post-title-link" itemprop="url">JVM Interview Summary</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2024-12-22 19:18:20 / Modified: 21:42:59" itemprop="dateCreated datePublished" datetime="2024-12-22T19:18:20+08:00">2024-12-22</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Interviews/" itemprop="url" rel="index"><span itemprop="name">Interviews</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="GC"><a href="#GC" class="headerlink" title="GC"></a>GC</h1><h2 id="对象什么时候被垃圾回收器回收？"><a href="#对象什么时候被垃圾回收器回收？" class="headerlink" title="对象什么时候被垃圾回收器回收？"></a>对象什么时候被垃圾回收器回收？</h2><h2 id="JVM的垃圾回收算法有哪些？"><a href="#JVM的垃圾回收算法有哪些？" class="headerlink" title="JVM的垃圾回收算法有哪些？"></a>JVM的垃圾回收算法有哪些？</h2><h2 id="JVM中的分代回收"><a href="#JVM中的分代回收" class="headerlink" title="JVM中的分代回收"></a>JVM中的分代回收</h2><h2 id="MinorGC、MajorGC、FullGC"><a href="#MinorGC、MajorGC、FullGC" class="headerlink" title="MinorGC、MajorGC、FullGC"></a>MinorGC、MajorGC、FullGC</h2><h2 id="JVM的垃圾收集器有哪些？"><a href="#JVM的垃圾收集器有哪些？" class="headerlink" title="JVM的垃圾收集器有哪些？"></a>JVM的垃圾收集器有哪些？</h2><h2 id="CMS垃圾收集器的优点和弊端"><a href="#CMS垃圾收集器的优点和弊端" class="headerlink" title="CMS垃圾收集器的优点和弊端"></a>CMS垃圾收集器的优点和弊端</h2><h2 id="CMS垃圾收集器的浮动垃圾"><a href="#CMS垃圾收集器的浮动垃圾" class="headerlink" title="CMS垃圾收集器的浮动垃圾"></a>CMS垃圾收集器的浮动垃圾</h2><h2 id="CMS重新标记阶段是否会标记所有的对象"><a href="#CMS重新标记阶段是否会标记所有的对象" class="headerlink" title="CMS重新标记阶段是否会标记所有的对象"></a>CMS重新标记阶段是否会标记所有的对象</h2><h2 id="JVM的指针碰撞和空闲列表"><a href="#JVM的指针碰撞和空闲列表" class="headerlink" title="JVM的指针碰撞和空闲列表"></a>JVM的指针碰撞和空闲列表</h2><h2 id="详细介绍一下G1垃圾收集器"><a href="#详细介绍一下G1垃圾收集器" class="headerlink" title="详细介绍一下G1垃圾收集器"></a>详细介绍一下G1垃圾收集器</h2><h2 id="CMS与G1的区别"><a href="#CMS与G1的区别" class="headerlink" title="CMS与G1的区别"></a>CMS与G1的区别</h2><h2 id="G1垃圾收集器如何实现可预测的停顿时间模型"><a href="#G1垃圾收集器如何实现可预测的停顿时间模型" class="headerlink" title="G1垃圾收集器如何实现可预测的停顿时间模型"></a>G1垃圾收集器如何实现可预测的停顿时间模型</h2><h2 id="强引用、软引用、弱引用、虚引用"><a href="#强引用、软引用、弱引用、虚引用" class="headerlink" title="强引用、软引用、弱引用、虚引用"></a>强引用、软引用、弱引用、虚引用</h2><h1 id="杂记"><a href="#杂记" class="headerlink" title="杂记"></a>杂记</h1><h2 id="字符串常量池"><a href="#字符串常量池" class="headerlink" title="字符串常量池"></a>字符串常量池</h2><h2 id="常见的OOM"><a href="#常见的OOM" class="headerlink" title="常见的OOM"></a>常见的OOM</h2>
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -294,7 +372,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2024-12-22 15:14:28 / Modified: 16:54:00" itemprop="dateCreated datePublished" datetime="2024-12-22T15:14:28+08:00">2024-12-22</time>
+      <time title="Created: 2024-12-22 15:14:28 / Modified: 18:53:37" itemprop="dateCreated datePublished" datetime="2024-12-22T15:14:28+08:00">2024-12-22</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
